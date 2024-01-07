@@ -5,11 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "serve:intel-staging": "dotenv -e .env.intel.staging -- vue-cli-service serve",
+    "build:intel-staging": "node set-env.js intel staging && vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "dotenv": "^16.3.1",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
@@ -26,6 +29,7 @@
     "@vue/test-utils": "^1.0.3",
     "chai": "^4.1.2",
     "chromedriver": "120",
+    "dotenv-cli": "^7.3.0",
     "geckodriver": "^1.20.0",
     "vue-template-compiler": "^2.6.11"
   }
