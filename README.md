@@ -82,8 +82,6 @@
 
   - Beasuse import is async we need to use `await` keyword to get the router object
 
-  ```js
-
   > Note: Beacause of the async function due to import we need to use `await` keyword to get the router object
   
 
